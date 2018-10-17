@@ -1,0 +1,25 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/beccahyland/turing/3module/diagnostic/alt-fuel-finder/app/controllers/welcome_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/beccahyland/turing/3module/diagnostic/alt-fuel-finder/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/beccahyland/turing/3module/diagnostic/alt-fuel-finder/app/helpers/application_helper.rb": [
+        0,
+        0
+      ]
+    },
+    "timestamp": 1539787231
+  }
+}
