@@ -4,7 +4,7 @@ class AltFuelFinderService
   end
 
   def station_search
-    get_json("/api/alt-fuel-stations/v1/nearest.json?api_key=  &zip=#{@filter[:zip]}&limit=10")
+    get_json("/api/alt-fuel-stations/v1/nearest.json?api_key=#{ENV["nrel_api_key"]}&location=#{@filter[:zip]}&limit=10")
   end
 
   private

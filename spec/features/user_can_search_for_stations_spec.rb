@@ -4,7 +4,7 @@ feature 'visitor searches for stations' do
   scenario 'with a valid zip code' do
     # As a user
     # When I visit "/"
-    visit '/'
+      visit '/'
     # And I fill in the search form with 80203 (Note: Use the existing search form)
     fill_in :q, with: '80203'
     # And I click "Locate"
