@@ -1,0 +1,22 @@
+class AltFuelFinderService
+  def initialize(filter = {})
+    @filter = filter
+  end
+
+  def station_search
+    get_json("/api/alt-fuel-stations/v1/nearest.json?api_key=  &zip=#{@filter[:zip]}&limit=10")
+  end
+
+  private
+
+  def conn
+    Faraday.new(url: "https://developer.nrel.gov") do |faraday|
+      faraday.headers["X-API-Key"] = ENV["nrel_api_key"]
+      faraday.adapter Faraday.default_adapter
+    end
+  end
+
+  def get_json(url)
+    JSON.parse(conn.get(url).body, symbolize_names: true)
+  end
+end
