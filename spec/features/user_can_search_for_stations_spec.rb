@@ -17,6 +17,7 @@ feature 'visitor searches for stations' do
     expect(page).to_not have_content("Diesel")
     # And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
     within(first(".station")) do
+      #need better expectation, localhost shows blank <li>s
       expect(page).to have_css(".name")
       expect(page).to have_css(".address")
       expect(page).to have_css(".fuel_type")
