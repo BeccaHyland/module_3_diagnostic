@@ -6,7 +6,7 @@ feature 'visitor searches for stations' do
     # When I visit "/"
       visit '/'
     # And I fill in the search form with 80203 (Note: Use the existing search form)
-    fill_in 'q', :with => "80203"
+    fill_in 'q', :with => 80203
     # And I click "Locate"
     click_on "Locate"
     # Then I should be on page "/search"

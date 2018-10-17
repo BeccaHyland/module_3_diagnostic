@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-17T10:55:53-06:00">2018-10-17T10:55:53-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-17T11:00:11-06:00">2018-10-17T11:00:11-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -63,9 +63,9 @@
       <tr>
         <td class="strong"><a href="#c9bdeb4b8232f022de58b726fda3f14c4dfc0213" class="src_link" title="app/controllers/search_controller.rb">app/controllers/search_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>3</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -104,10 +104,10 @@
         <td class="strong"><a href="#b6b5a089658282435cb08314744bf3767e4dbbb3" class="src_link" title="app/models/station_search_result.rb">app/models/station_search_result.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>17</td>
-        <td>10</td>
-        <td>10</td>
+        <td>9</td>
+        <td>9</td>
         <td>0</td>
-        <td>1.9</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
@@ -140,8 +140,8 @@
   <a name="Controllers"></a>
   <div>
     <b>3</b> files in total.
-    <b>7</b> relevant lines. 
-    <span class="green"><b>7</b> lines covered</span> and
+    <b>8</b> relevant lines. 
+    <span class="green"><b>8</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -171,9 +171,9 @@
       <tr>
         <td class="strong"><a href="#c9bdeb4b8232f022de58b726fda3f14c4dfc0213" class="src_link" title="app/controllers/search_controller.rb">app/controllers/search_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>3</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -237,15 +237,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.99
+         4.16
        </span>
     </span> hits/line)
   </h2>
   <a name="Models"></a>
   <div>
     <b>2</b> files in total.
-    <b>18</b> relevant lines. 
-    <span class="green"><b>18</b> lines covered</span> and
+    <b>17</b> relevant lines. 
+    <span class="green"><b>17</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -276,10 +276,10 @@
         <td class="strong"><a href="#b6b5a089658282435cb08314744bf3767e4dbbb3" class="src_link" title="app/models/station_search_result.rb">app/models/station_search_result.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>17</td>
-        <td>10</td>
-        <td>10</td>
+        <td>9</td>
+        <td>9</td>
         <td>0</td>
-        <td>1.9</td>
+        <td>2.0</td>
       </tr>
       
     </tbody>
@@ -556,8 +556,8 @@
     <h3>app/controllers/search_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -580,16 +580,22 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">    @search_result = StationSearchResult.new(params[:zip])</code>
+          <code class="ruby">    binding.pry</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @search_result = StationSearchResult.new(params[:q])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">end</code>
@@ -794,8 +800,8 @@
     <h3>app/models/station_search_result.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -821,8 +827,8 @@
           <code class="ruby">    @zip = zip</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="4">
+          
           
           <code class="ruby">  end</code>
         </li>
@@ -833,32 +839,32 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
-          
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
           <code class="ruby">  def stations</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="7">
+          
           
           <code class="ruby">    @stations ||= service.station_search[:fuel_stations].map do |station_data|</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
-          
+        <li class="covered" data-hits="10" data-linenumber="8">
+          <span class="hits">10</span>
           
           <code class="ruby">      Station.new(station_data)</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="9">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="10">
+          
           
           <code class="ruby">  end</code>
         </li>
@@ -869,20 +875,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
-          
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
           
           <code class="ruby">  private</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="13">
+          
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
-          
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
           
           <code class="ruby">  def service</code>
         </li>
@@ -893,8 +899,8 @@
           <code class="ruby">    AltFuelFinderService.new({zip: @zip})</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="16">
+          
           
           <code class="ruby">  end</code>
         </li>

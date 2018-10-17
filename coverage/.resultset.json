@@ -19,11 +19,11 @@
         1,
         1,
         1,
+        1,
         null,
         null
       ],
       "/Users/beccahyland/turing/3module/diagnostic/alt-fuel-finder/app/models/station_search_result.rb": [
-        1,
         1,
         1,
         1,
@@ -89,6 +89,6 @@
         0
       ]
     },
-    "timestamp": 1539795353
+    "timestamp": 1539795611
   }
 }
