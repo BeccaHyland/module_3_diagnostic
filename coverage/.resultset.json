@@ -15,11 +15,37 @@
         1,
         null
       ],
+      "/Users/beccahyland/turing/3module/diagnostic/alt-fuel-finder/app/controllers/search_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/beccahyland/turing/3module/diagnostic/alt-fuel-finder/app/models/station_search_result.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        0,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/beccahyland/turing/3module/diagnostic/alt-fuel-finder/app/helpers/application_helper.rb": [
         0,
         0
       ]
     },
-    "timestamp": 1539789295
+    "timestamp": 1539790768
   }
 }

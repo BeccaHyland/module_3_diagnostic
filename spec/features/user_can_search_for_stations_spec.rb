@@ -10,7 +10,7 @@ feature 'visitor searches for stations' do
     # And I click "Locate"
     click_on "Locate"
     # Then I should be on page "/search"
-    expect(current_path).to be "/search"
+    expect(current_path).to eq("/search")
     # Then I should see a list of the 10 closest stations within 6 miles sorted by distance
     expect(page).to have_css(".station", count: 10)
     # And the stations should be limited to Electric and Propane
