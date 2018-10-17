@@ -4,7 +4,7 @@ class Station
               :fuel_type,
               :distance,
               :access_times
-
+#attribute names not matching json headers
   def initialize(data)
     @name     = data[:name]
     @address    = data[:address]

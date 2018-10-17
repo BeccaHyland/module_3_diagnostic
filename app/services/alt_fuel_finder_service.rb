@@ -4,7 +4,6 @@ class AltFuelFinderService
   end
 
   def station_search
-    #the zip is nil - not getting passed through search form
     get_json("/api/alt-fuel-stations/v1.json?api_key=#{ENV["nrel_api_key"]}&location=#{@filter[:zip]}&limit=10")
   end
 
